@@ -1,0 +1,44 @@
+.navbarBox {
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #5b5b5b;
+  display: flex;
+  align-items: center;
+  inset: 0;
+  flex-direction: column;
+  justify-content: space-around;
+
+  .navList {
+    list-style: none;
+    display: grid;
+    place-items: center;
+    gap: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbarBox {
+    position: static;
+    top: 0;
+    height: 60px;
+    min-height: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #5b5b5b84;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    backdrop-filter: blur(0.5);
+
+    .navList {
+      display: flex;
+      gap: 0;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .logo {
+      margin-left: 50px;
+    }
+  }
+}

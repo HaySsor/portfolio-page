@@ -1,0 +1,26 @@
+.button {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  border: none;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 25px;
+  z-index: 9999;
+  width: 50px;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #333;
+
+  .navbarBar {
+    width: 20px;
+    height: 2px;
+    background-color: #333;
+  }
+
+  &:hover {
+    background-color: #a2d2ff7b;
+  }
+}
