@@ -7,4 +7,5 @@ type Links = {
 type Skill ={
   name : string,
   rate : number
+  imageSrc : string,
 }

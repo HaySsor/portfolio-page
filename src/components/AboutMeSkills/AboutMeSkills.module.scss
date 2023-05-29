@@ -1,5 +1,12 @@
-.container {
-  display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+.box {
+  .title{
+    margin: 20px 10px;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  .container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
 }

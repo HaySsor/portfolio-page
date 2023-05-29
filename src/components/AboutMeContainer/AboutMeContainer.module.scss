@@ -1,8 +1,14 @@
 .container {
   padding: 10px;
-  .title {
-    text-align: right;
-    margin-right: 20px;
-    font-size: 2rem;
+
+  .titleBox {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 30px;
+    gap: 10px;
+    .title {
+      font-size: 1.8rem;
+    }
   }
 }

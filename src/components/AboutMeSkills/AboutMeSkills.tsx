@@ -6,10 +6,13 @@ type Props = {};
 
 export default function AboutMeSkills({}: Props) {
   return (
-    <div className={styles.container}>
-      {skills.map((skill) => {
-        return <AboutMeSkillsItem key={skill.name} skill={skill} />;
-      })}
+    <div className={styles.box}>
+      <h3 className={styles.title}>Umiejętności</h3>
+      <div className={styles.container}>
+        {skills.map((skill) => {
+          return <AboutMeSkillsItem key={skill.name} skill={skill} />;
+        })}
+      </div>
     </div>
   );
 }

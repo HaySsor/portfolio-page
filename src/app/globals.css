@@ -19,6 +19,7 @@ body {
   --gradient-color1: #a2d2ff7b;
   --gradient-color2: #fec99a7e;
   min-height: 100vh;
+  min-height: 100svh;
   font-family: 'Montserrat', sans-serif;
   background: linear-gradient(
     var(--gradient-angle),

@@ -17,14 +17,14 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
         <div className='wrapper'>
           <NavbarContainer />
           {children}
-          <Crab
+          {/* <Crab
             texts={[
               'dzień doberek',
               ' miło mi ciebie poznać ',
               'zapraszam  na moją stronę pełną frajdy ',
               'jest tutaj duzoooo fajnych projektów',
             ]}
-          />
+          /> */}
         </div>
       </body>
     </html>
