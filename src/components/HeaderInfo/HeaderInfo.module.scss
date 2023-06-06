@@ -7,11 +7,14 @@
   -webkit-backdrop-filter: blur(5.5px);
   border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 20px;
-  margin-left: -22px;
-  width: 290px;
-
+  width: 90%;
+  height: calc(100vh - 400px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   p {
     font-size: 1.5rem;
+    text-align: center;
   }
 }

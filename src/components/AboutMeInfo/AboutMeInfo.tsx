@@ -1,6 +1,8 @@
 'use client';
+import {DialogEndContext} from '@/app/Context/DialogEnd';
 import styles from './AboutMeInfo.module.scss';
 import {motion} from 'framer-motion';
+import {useContext} from 'react';
 
 const animation = {
   hidden: {
@@ -20,11 +22,13 @@ const animation = {
 type Props = {};
 
 export default function AboutMeInfo({}: Props) {
+  const {dialogEnd} = useContext(DialogEndContext);
+
   return (
     <motion.div
       variants={animation}
       initial='hidden'
-      animate='show'
+      animate={dialogEnd && 'show'}
       className={styles.container}>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum quod ipsum

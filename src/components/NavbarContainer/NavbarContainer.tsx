@@ -1,9 +1,11 @@
 'use client';
 import {useEffect, useState} from 'react';
-import styles from './NavbarContainer.module.scss'
+import styles from './NavbarContainer.module.scss';
 import Navbar from '../Navbar/Navbar';
 import NavbarButton from '../NavbarButton/NavbarButton';
 import {useWindowSize} from '@/hooks/useWindowSize';
+import Link from 'next/link';
+import Image from 'next/image';
 
 export default function NavbarContainer() {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,6 +29,11 @@ export default function NavbarContainer() {
 
   return (
     <header className={styles.headerBox}>
+      {isMobileNav && (
+        <Link href={'/'} className={styles.logo}>
+          <Image src='/crab.png' alt='crab logo' width={50} height={50}></Image>
+        </Link>
+      )}
       {isMobileNav && <NavbarButton toggleOpen={toggleOpen} isOpen={isOpen} />}
       <Navbar
         isOpen={isOpen}

@@ -1,20 +1,15 @@
 'use client';
-import {useEffect, useState} from 'react';
+import {useEffect, useState, useRef, useId} from 'react';
 import styles from './AboutMeSkillsItem.module.scss';
 import Image from 'next/image';
-import {motion} from 'framer-motion';
+import {motion, useInView} from 'framer-motion';
 
 const animation = {
-  hidden: {
-    x: -600,
+  move: {
+    y: [10, -10, 10, -10, 10],
     transition: {
-      duration: 0.3,
-    },
-  },
-  show: {
-    x: 0,
-    transition: {
-      duration: 0.3,
+      duration: 10,
+      repeat: Infinity,
     },
   },
 };
@@ -26,6 +21,8 @@ type Props = {
 export default function AboutMeSkillsItem({skill}: Props) {
   const [arrayImages, setArrayImages] = useState<number[]>([]);
   const {name, rate, imageSrc} = skill;
+  const ref = useRef(null);
+  const isInView = useInView(ref, {once: true});
 
   useEffect(() => {
     const array = Array(rate).fill(1);
@@ -37,9 +34,9 @@ export default function AboutMeSkillsItem({skill}: Props) {
 
   return (
     <motion.div
+      ref={ref}
       variants={animation}
-      initial='hidden'
-      animate='show'
+      animate={isInView && 'move'}
       className={styles.container}>
       <div className={styles.titleBox}>
         <h3 className={styles.title}>{name}</h3>
@@ -52,7 +49,7 @@ export default function AboutMeSkillsItem({skill}: Props) {
         />
       </div>
       <div className={styles.imageBox}>
-        {arrayImages.map((image) => {
+        {arrayImages.map((image, i) => {
           return image === 1 ? (
             <Image
               src='/crab.png'
@@ -60,7 +57,7 @@ export default function AboutMeSkillsItem({skill}: Props) {
               height={25}
               alt='Crab Icon'
               className={styles.color}
-              key={Math.floor(Math.random() * 100)}
+              key={i + 1}
             />
           ) : (
             <Image

@@ -2,6 +2,7 @@ import Crab from '@/components/Crab/Crab';
 import './globals.css';
 import {Montserrat} from 'next/font/google';
 import NavbarContainer from '@/components/NavbarContainer/NavbarContainer';
+import {DialogEndProvider} from './Context/DialogEnd';
 
 const inter = Montserrat({subsets: ['latin']});
 
@@ -14,18 +15,20 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang='en'>
       <body className={inter.className}>
-        <div className='wrapper'>
-          <NavbarContainer />
-          {children}
-          {/* <Crab
-            texts={[
-              'dzień doberek',
-              ' miło mi ciebie poznać ',
-              'zapraszam  na moją stronę pełną frajdy ',
-              'jest tutaj duzoooo fajnych projektów',
-            ]}
-          /> */}
-        </div>
+        <DialogEndProvider>
+          <div className='wrapper'>
+            <NavbarContainer />
+            {children}
+            <Crab
+              texts={[
+                'dzień doberek',
+                ' miło mi ciebie poznać ',
+                'zapraszam  na moją stronę pełną frajdy ',
+                'jest tutaj duzoooo fajnych projektów',
+              ]}
+            />
+          </div>
+        </DialogEndProvider>
       </body>
     </html>
   );

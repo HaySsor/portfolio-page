@@ -9,6 +9,8 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 5px;
   .gray {
     filter: grayscale(100%);

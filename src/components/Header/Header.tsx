@@ -7,7 +7,8 @@ type Props = {};
 export default function Header({}: Props) {
   return (
     <div className={styles.header}>
-      <Image src='/image2.jpeg' alt='.' fill className={styles.background} />
+      <div className={styles.imgBox}>
+      </div>
 
       <h1 className={styles.title}>Moje Portfolio</h1>
 

@@ -1,11 +1,12 @@
 'use client';
 import Image from 'next/image';
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState, useContext} from 'react';
 import styles from './Crab.module.scss';
 import {motion, AnimatePresence} from 'framer-motion';
 import {usePrintText} from '@/hooks/usePlayText';
 import {animationShow, moveAnimation} from './animations';
 import {useWait} from '@/hooks/useWait';
+import {DialogEndContext} from '@/app/Context/DialogEnd';
 
 type Props = {
   texts: string[];
@@ -13,7 +14,8 @@ type Props = {
 
 export default function Crab({texts}: Props) {
   const [displayText, setDisplayText] = useState('');
-  const [dialogEnd, setDialogEnd] = useState(false);
+
+  const {dialogEnd, handleDialogEnd} = useContext(DialogEndContext);
 
   useEffect(() => {
     const handlePlayText = async () => {
@@ -25,7 +27,8 @@ export default function Crab({texts}: Props) {
           setDisplayText(text);
         }
       }
-      await useWait(1500).then(() => setDialogEnd(true));
+      await useWait(1500);
+      await handleDialogEnd(true);
     };
     setTimeout(() => {
       handlePlayText();

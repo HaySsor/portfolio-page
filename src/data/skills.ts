@@ -16,7 +16,7 @@ export const skills: Skill[] = [
   },
   {
     name: 'TypeScript',
-    rate: 4,
+    rate: 3,
     imageSrc: '/typescript.png',
   },
   {

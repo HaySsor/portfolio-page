@@ -21,7 +21,7 @@ export const moveAnimation = {
     x: 200,
   },
   hidden: {
-    x: [0, 10, 20, 40, 50, 70, 80, 90, 100, 200],
+    x: [0, 10, 20, 40, 50, 70, 80, 90, 120, 200],
     rotate: [0, -5, 5, -5, 5, -5, 5, -5, 5, -5, 5],
     transition: {ease: 'easeInOut', duration: 1.5, delay: 0.5},
   },
