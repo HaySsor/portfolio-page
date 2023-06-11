@@ -1,5 +1,4 @@
 .textBox {
-  margin-top: 20px;
   background: rgba(255, 255, 255, 0.616);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -8,10 +7,11 @@
   border: 1px solid rgba(255, 255, 255, 0.15);
   padding: 20px;
   width: 90%;
-  height: calc(100vh - 400px);
+  height: calc(100vh - 500px);
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 
   p {
     font-size: 1.5rem;

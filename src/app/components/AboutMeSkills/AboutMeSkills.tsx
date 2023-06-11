@@ -4,7 +4,6 @@ import AboutMeSkillsItem from '../AboutMeSkillsItem/AboutMeSkillsItem';
 import styles from './AboutMeSkills.module.scss';
 import {skills} from '@/data/skills';
 
-
 type Props = {};
 
 export default function AboutMeSkills({}: Props) {
