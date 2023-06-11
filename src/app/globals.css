@@ -31,6 +31,7 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
+
 @keyframes rotate {
   0% {
     --gradient-angle: 0deg;
