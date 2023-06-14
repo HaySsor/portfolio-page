@@ -5,6 +5,7 @@ type Links = {
   img: string;
 };
 type Skill = {
+  id: number;
   name: string;
   rate: number;
   imageSrc: string;
@@ -15,4 +16,20 @@ type Project = {
   info: string;
   photoSrc: string;
   photoGallery: string[];
+  dialog: string;
+  dialogTextArray: string[];
+};
+type DialogEnd = {
+  home: boolean;
+  portfolio: boolean;
+  projects: Projects;
+  contact: boolean;
+};
+
+type Projects = {
+  bowling: boolean;
+  complaints: boolean;
+  imdb: boolean;
+  crabs: boolean;
+  van: boolean;
 };

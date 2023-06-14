@@ -19,25 +19,15 @@
 
 @media screen and (min-width: 768px) {
   .navbarBox {
-    position: fixed;
-    top: 0;
-    height: 60px;
-    min-height: 50px;
-    flex-direction: row;
-    justify-content: space-between;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    backdrop-filter: blur(0.5);
+    display: none;
+  }
 
+  .desktopNav {
+    width: 100%;
     .navList {
+      list-style: none;
       display: flex;
-      gap: 0;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-
-    .logo {
-      margin-left: 50px;
+      justify-content: flex-end;
     }
   }
 }

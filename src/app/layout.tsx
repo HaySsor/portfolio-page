@@ -19,14 +19,6 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
           <div className='wrapper'>
             <NavbarContainer />
             {children}
-            {/* <Crab
-                texts={[
-                  'dzień doberek',
-                  ' miło mi ciebie poznać ',
-                  'zapraszam  na moją stronę pełną frajdy ',
-                  'jest tutaj duzoooo fajnych projektów',
-                ]}
-              /> */}
           </div>
         </DialogEndProvider>
       </body>

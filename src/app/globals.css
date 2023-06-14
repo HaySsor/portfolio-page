@@ -22,9 +22,8 @@ body {
   min-height: 100svh;
   font-family: 'Montserrat', sans-serif;
   background: linear-gradient(
-    var(--gradient-angle),
-    var(--gradient-color1),
-    var(--gradient-color2)
+    var(--gradient-color2),
+    var(--gradient-color1)
   );
   animation: rotate 15s linear infinite;
 }

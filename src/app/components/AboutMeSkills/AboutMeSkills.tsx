@@ -12,7 +12,7 @@ export default function AboutMeSkills({}: Props) {
       <h3 className={styles.title}>Umiejętności</h3>
       <div className={styles.container}>
         {skills.map((skill) => {
-          return <AboutMeSkillsItem key={skill.name} skill={skill} />;
+          return <AboutMeSkillsItem key={skill.id} skill={skill} />;
         })}
       </div>
     </div>

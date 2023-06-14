@@ -7,7 +7,7 @@ export default function Header({}: Props) {
   return (
     <header className={styles.header}>
       <div className={styles.photoBox}>
-        <Image src='/header.png' alt='.' fill className={styles.img}></Image>
+        <Image src='/header1.png' alt='.' fill className={styles.img}></Image>
       </div>
       <div className={styles.titleBox}>
         <h1 className={styles.title}>Moje Projekty</h1>

@@ -5,6 +5,8 @@ export const projectsList = [
     info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, porro quae est neque voluptatum ex veniam eius eveniet consequuntur a aspernatur sapiente dicta ad, et expedita saepe alias laborum aperiam.',
     photoSrc: '/bowling/img1.png',
     photoGallery: ['/bowling/img1.png', '/bowling/img2.png'],
+    dialog: 'bowling',
+    dialogTextArray: ['kręgle', 'pupcia', 'ojeje'],
   },
   {
     id: 2,
@@ -12,6 +14,8 @@ export const projectsList = [
     info: 'INFO',
     photoSrc: '/reklamacje/img1.png',
     photoGallery: ['/reklamacje/img1.png'],
+    dialog: 'complaints',
+    dialogTextArray: ['reklamacje'],
   },
   {
     id: 3,
@@ -19,6 +23,8 @@ export const projectsList = [
     info: 'INFO',
     photoSrc: '/imdb/img1.png',
     photoGallery: ['/imdb/img1.png'],
+    dialog: 'imdb',
+    dialogTextArray: ['imdb'],
   },
   {
     id: 4,
@@ -26,6 +32,8 @@ export const projectsList = [
     info: 'INFO',
     photoSrc: '/Calory/img1.png',
     photoGallery: ['/Calory/img1.png'],
+    dialog: 'crabs',
+    dialogTextArray: ['craby'],
   },
   {
     id: 5,
@@ -33,5 +41,7 @@ export const projectsList = [
     info: 'INFO',
     photoSrc: '/Van/img1.png',
     photoGallery: ['/Van/img1.png'],
+    dialog: 'van',
+    dialogTextArray: ['van'],
   },
 ];

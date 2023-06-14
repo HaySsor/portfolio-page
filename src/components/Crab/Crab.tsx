@@ -10,9 +10,11 @@ import {DialogEndContext} from '@/app/Context/DialogEnd';
 
 type Props = {
   texts: string[];
+  page: string;
+  projectName?: string;
 };
 
-export default function Crab({texts}: Props) {
+export default function Crab({texts, page, projectName}: Props) {
   const [displayText, setDisplayText] = useState('');
 
   const {dialogEnd, handleDialogEnd} = useContext(DialogEndContext);
@@ -28,7 +30,9 @@ export default function Crab({texts}: Props) {
         }
       }
       await useWait(1500);
-      await handleDialogEnd(true);
+      projectName
+        ? await handleDialogEnd(page, true, projectName)
+        : await handleDialogEnd(page, true);
     };
     setTimeout(() => {
       handlePlayText();
@@ -37,7 +41,7 @@ export default function Crab({texts}: Props) {
 
   return (
     <AnimatePresence>
-      {dialogEnd ? null : (
+      {dialogEnd[page as keyof DialogEnd] || dialogEnd.projects[projectName as keyof Projects] ? null : (
         <div className={styles.crabContainer}>
           <motion.div
             key={1}

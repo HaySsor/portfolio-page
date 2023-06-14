@@ -66,7 +66,7 @@ export default function AboutMeSkillsItem({skill}: Props) {
               height={25}
               alt='Crab Icon'
               className={styles.gray}
-              key={Math.floor(Math.random() * 100)}
+              key={i + 1}
             />
           );
         })}

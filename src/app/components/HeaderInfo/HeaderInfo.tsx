@@ -27,7 +27,7 @@ export default function HeaderInfo({}: Props) {
     <motion.div
       variants={animation}
       initial='hidden'
-      animate={dialogEnd && 'show'}
+      animate={dialogEnd.home && 'show'}
       className={styles.textBox}>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias veritatis

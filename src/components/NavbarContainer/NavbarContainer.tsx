@@ -29,11 +29,10 @@ export default function NavbarContainer() {
 
   return (
     <header className={styles.headerBox}>
-      {isMobileNav && (
-        <Link href={'/'} className={styles.logo}>
-          <Image src='/crab.png' alt='crab logo' width={50} height={50}></Image>
-        </Link>
-      )}
+      <Link href={'/'} className={styles.logo}>
+        <Image src='/crab.png' alt='crab logo' width={50} height={50}></Image>
+      </Link>
+
       {isMobileNav && <NavbarButton toggleOpen={toggleOpen} isOpen={isOpen} />}
       <Navbar
         isOpen={isOpen}
