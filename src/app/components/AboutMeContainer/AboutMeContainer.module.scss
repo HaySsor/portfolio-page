@@ -12,3 +12,32 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 20px;
+    margin-bottom: 150px;
+    .titleBox {
+      gap: 20px;
+      .title {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    padding: 20px;
+    margin-bottom: 150px;
+    .titleBox {
+      gap: 10px;
+      .title {
+        font-size: 2.5rem;
+      }
+    }
+    .infoBox {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}

@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import styles from './ProjectItem.module.scss';
 import Link from 'next/link';
+import Loading from '@/app/loading';
 
 type Props = {
   project: Project;
@@ -17,7 +18,12 @@ export default function ProjectItem({project}: Props) {
       </div>
       <div className={styles.photoBox}>
         <Link href={`/project/${id}`}>
-          <Image src={photoSrc} alt='.' fill></Image>
+          <Image
+            src={photoSrc}
+            alt='.'
+            fill
+            placeholder='blur'
+            blurDataURL='/Spinner.svg'></Image>
         </Link>
       </div>
     </div>

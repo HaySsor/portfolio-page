@@ -1,9 +1,33 @@
 .wrapper {
-  border-radius: 20px 20px 0 0;
   padding: 10px;
   display: flex;
   gap: 20px;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   width: 100%;
+}
+@media screen and (min-width: 500px) {
+  .wrapper {
+    padding: 10px;
+    display: grid;
+    gap: 15px;
+    justify-items: center;
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .wrapper {
+    position: absolute;
+    margin-left: 20px;
+    max-width: 1200px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 80px;
+    display: grid;
+    gap: 15px;
+    justify-items: stretch;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
 }

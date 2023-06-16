@@ -18,3 +18,28 @@
     text-align: center;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .textBox {
+    height: 350px;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    p {
+      font-size: 2rem;
+      text-align: center;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .textBox {
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    left: 30px;
+    bottom: 100px;
+    p {
+      font-size: 2rem;
+      text-align: center;
+    }
+  }
+}

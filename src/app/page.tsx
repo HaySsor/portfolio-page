@@ -4,19 +4,19 @@ import AboutMeContainer from '@/app/components/AboutMeContainer/AboutMeContainer
 import Crab from '@/components/Crab/Crab';
 
 export default function Home() {
+  const crabText = [
+    'Hello 👋🏻',
+    'miło mi że odwiedziłeś moją stronę',
+    'mam na imie Przemek',
+    ' a to moja strona portfolio',
+    'tutaj znajduje się krótkie info o mnie',
+  ];
+
   return (
     <main className={styles.test}>
       <Header />
       <AboutMeContainer />
-      <Crab
-        page = 'home'
-        texts={[
-          'dzień doberek',
-          ' miło mi ciebie poznać ',
-          'zapraszam  na moją stronę pełną frajdy ',
-          'jest tutaj duzoooo fajnych projektów',
-        ]}
-      />
+      <Crab page='home' texts={crabText} />
     </main>
   );
 }

@@ -48,26 +48,28 @@ export default function AboutMeSkillsItem({skill}: Props) {
           className={styles.titleImage}
         />
       </div>
-      <div className={styles.imageBox}>
+      <div className={styles.imageContainer}>
         {arrayImages.map((image, i) => {
           return image === 1 ? (
-            <Image
-              src='/crab.png'
-              width={25}
-              height={25}
-              alt='Crab Icon'
-              className={styles.color}
-              key={i + 1}
-            />
+            <div className={styles.imageBox}>
+              <Image
+                src='/crab.png'
+                fill
+                alt='Crab Icon'
+                className={styles.color}
+                key={i + 1}
+              />
+            </div>
           ) : (
-            <Image
-              src='/crab.png'
-              width={25}
-              height={25}
-              alt='Crab Icon'
-              className={styles.gray}
-              key={i + 1}
-            />
+            <div className={styles.imageBox}>
+              <Image
+                src='/crab.png'
+                alt='Crab Icon'
+                className={styles.gray}
+                key={i + 1}
+                fill
+              />
+            </div>
           );
         })}
       </div>

@@ -8,3 +8,11 @@
     padding: 5px 10px;
   }
 }
+@media screen and (min-width: 500px) {
+  .main {
+    .back {
+      margin-top: 10px;
+      font-size: 2.2rem;
+    }
+  }
+}

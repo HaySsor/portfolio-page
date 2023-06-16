@@ -6,7 +6,7 @@ import {useContext} from 'react';
 
 const animation = {
   hidden: {
-    x: -600,
+    x: '-120%',
     transition: {
       duration: 0.3,
     },
