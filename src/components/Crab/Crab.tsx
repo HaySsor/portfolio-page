@@ -25,7 +25,7 @@ export default function Crab({texts, page, projectName}: Props) {
         if (item === texts[0]) {
           setDisplayText(texts[0]);
         } else {
-          const text = await usePrintText(item, 1300);
+          const text = await usePrintText(item, 1700);
           setDisplayText(text);
         }
       }

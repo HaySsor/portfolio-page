@@ -11,8 +11,34 @@
     padding: 0 10px;
     font-size: 1.3rem;
     background-color: rgb(255, 255, 255);
-    padding: 20px 10px;
+    padding: 20px 20px;
     border-radius: 20px;
+    border: 2px solid #fc6d6f;
+    .infoTitle {
+      font-size: 2rem;
+      display: block;
+      text-align-last: left;
+      font-weight: bold;
+    }
+  }
+  .techBox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #fc6d6f;
+    border-radius: 20px;
+    padding: 20px;
+    .titleTech {
+      font-size: 2rem;
+      color: #fc6d6f;
+    }
+    .tech {
+      font-size: 1.4rem;
+    }
   }
 }
 @media screen and (min-width: 768px) {

@@ -2,7 +2,6 @@
 import Image from 'next/image';
 import styles from './ProjectItem.module.scss';
 import Link from 'next/link';
-import Loading from '@/app/loading';
 
 type Props = {
   project: Project;

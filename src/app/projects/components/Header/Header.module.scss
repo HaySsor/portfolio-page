@@ -67,6 +67,10 @@
 @media screen and (min-width: 1200px) {
   .header {
     margin-top: 200px;
+    .titleBox {
+      .blob {
+        display: none;
+      }
+    }
   }
 }
-

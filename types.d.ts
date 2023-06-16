@@ -13,6 +13,7 @@ type Skill = {
 type Project = {
   id: number;
   title: string;
+  tech: string[];
   info: string;
   photoSrc: string;
   photoGallery: string[];

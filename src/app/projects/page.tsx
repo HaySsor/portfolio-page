@@ -7,7 +7,7 @@ type Props = {};
 export default function page({}: Props) {
   const crabText = [
     'Tutaj znajdziesz moje projekty',
-    'kliknij w zdjęcie aby zobaczysz',
+    'kliknij w zdjęcie aby zobaczyć',
     'szczegóły danego projektu ',
     'ps : piesek wabi się Sofi',
   ];

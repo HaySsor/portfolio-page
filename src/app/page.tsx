@@ -10,6 +10,8 @@ export default function Home() {
     'mam na imie Przemek',
     ' a to moja strona portfolio',
     'tutaj znajduje się krótkie info o mnie',
+    'potowarzyszę ci w tej wspaniałej',
+    'podróży przez moja stronę ',
   ];
 
   return (
